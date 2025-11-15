@@ -1,0 +1,19 @@
+{
+  "name": "task-microservice",
+  "version": "1.0.0",
+  "description": "Microservicio de tareas con arquitectura hexagonal",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": [
+    "microservices",
+    "hexagonal-architecture",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT"
+}
