@@ -1,8 +1,8 @@
-# 📝 Task Microservice - Ejemplo Práctico
+# Task Microservice - Ejemplo Práctico
 
 Este es un microservicio de ejemplo que demuestra la **arquitectura hexagonal** (puertos y adaptadores) de forma sencilla.
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 ```
 ┌─────────────────────────────────────┐
@@ -26,7 +26,7 @@ Este es un microservicio de ejemplo que demuestra la **arquitectura hexagonal** 
 └─────────────────────────────────────┘
 ```
 
-## 📁 Estructura
+##  Estructura
 
 ```
 task-microservice/
@@ -44,7 +44,7 @@ task-microservice/
 └── README.md
 ```
 
-## 🚀 Instalación y Uso
+## Instalación y Uso
 
 ### 1. Instalar dependencias:
 ```bash
@@ -59,7 +59,7 @@ npm start
 
 El servidor se ejecutará en `http://localhost:3000`
 
-## 🧪 Pruebas con cURL
+## Pruebas con cURL
 
 ### Crear una tarea:
 ```bash
@@ -78,7 +78,7 @@ curl http://localhost:3000/tasks
 curl -X PATCH http://localhost:3000/tasks/[ID]/complete
 ```
 
-## 🎯 Capas Explicadas
+## Capas Explicadas
 
 ### Domain (Dominio)
 - **task.js**: Define qué es una tarea y sus comportamientos básicos
@@ -95,14 +95,14 @@ curl -X PATCH http://localhost:3000/tasks/[ID]/complete
 ### Server
 - **server.js**: Conecta todas las piezas y levanta el servidor
 
-## 💡 Ventajas de esta Arquitectura
+##  Ventajas de esta Arquitectura
 
 1. **Independencia**: El dominio no conoce HTTP ni la base de datos
 2. **Testeable**: Puedes probar el dominio sin servidor ni BD
 3. **Flexible**: Cambiar de memoria a MongoDB solo requiere crear un nuevo adapter
 4. **Limpia**: Responsabilidades bien separadas
 
-## 🔄 Próximas Mejoras
+##  Próximas Mejoras
 
 - [ ] Agregar MongoDB como adapter de base de datos
 - [ ] Implementar GraphQL como nuevo adapter de entrada
