@@ -1,6 +1,6 @@
-# 🏗️ Arquitectura de Microservicios - Guía Sencilla
+# Arquitectura de Microservicios - Guía Sencilla
 
-## 📖 ¿Qué es?
+## ¿Qué es?
 
 Imagina que en lugar de tener un solo programa gigante (como un castillo enorme), divides tu aplicación en **pequeños programas independientes** (como casitas). Cada casita hace una cosa específica muy bien.
 
@@ -14,7 +14,7 @@ Cada una trabaja sola, pero se comunican entre ellas cuando lo necesitan.
 
 ---
 
-## 🎯 ¿Para qué sirve?
+## ¿Para qué sirve?
 
 ### Ventajas:
 1. **Más fácil de arreglar** - Si una casita se rompe, las demás siguen funcionando
@@ -29,7 +29,7 @@ Cada una trabaja sola, pero se comunican entre ellas cuando lo necesitan.
 
 ---
 
-## 🌟 Proyectos Exitosos que Usan Microservicios
+## Proyectos Exitosos que Usan Microservicios
 
 ### Empresas Grandes:
 - **Netflix** - Cada función (reproducir video, recomendaciones, perfiles) es un microservicio
@@ -45,7 +45,7 @@ Cada una trabaja sola, pero se comunican entre ellas cuando lo necesitan.
 
 ---
 
-## 🛠️ ¿Cómo se Implementa?
+## ¿Cómo se Implementa?
 
 ### Pasos básicos:
 
@@ -63,11 +63,11 @@ Cada una trabaja sola, pero se comunican entre ellas cuando lo necesitan.
 
 ---
 
-## 💡 Proyecto de Ejemplo: Sistema de Tareas
+## Proyecto de Ejemplo: Sistema de Tareas
 
 Vamos a crear un sistema simple de gestión de tareas usando **arquitectura hexagonal** (también llamada "puertos y adaptadores").
 
-### 📁 Estructura del Proyecto
+### Estructura del Proyecto
 
 ```
 task-microservice/
@@ -85,7 +85,7 @@ task-microservice/
 └── package.json
 ```
 
-### 🔧 Código del Ejemplo
+###  Código del Ejemplo
 
 #### 1. Domain - La lógica central (task.js)
 
@@ -292,7 +292,7 @@ app.listen(PORT, () => {
 
 ---
 
-## 🚀 Cómo Usar el Ejemplo
+##  Cómo Usar el Ejemplo
 
 ### 1. Instalar dependencias:
 ```bash
@@ -325,7 +325,7 @@ curl -X PATCH http://localhost:3000/tasks/[ID]/complete
 
 ---
 
-## 🎓 ¿Por qué Arquitectura Hexagonal?
+##  ¿Por qué Arquitectura Hexagonal?
 
 La arquitectura hexagonal separa tu aplicación en capas:
 
@@ -341,7 +341,7 @@ La arquitectura hexagonal separa tu aplicación en capas:
 
 ---
 
-## 📚 Próximos Pasos
+##  Próximos Pasos
 
 1. Agrega más microservicios (usuarios, notificaciones)
 2. Implementa comunicación entre servicios
@@ -351,6 +351,6 @@ La arquitectura hexagonal separa tu aplicación en capas:
 
 ---
 
-## 🤝 Conclusión
+##  Conclusión
 
 Los microservicios son como un equipo de fútbol: cada jugador tiene su posición y responsabilidad, pero todos trabajan juntos para ganar el partido. Empieza simple, aprende, y crece tu aplicación paso a paso.
